@@ -39,9 +39,6 @@ public class MainActivity extends AppCompatActivity {
         documentsDatabase.docHeaderDao().getDocumentsHeaderList();
         documentsDatabase.docBodyDao().getDocBodyList();
 
-
-
-
         buttonAdd.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -57,15 +54,8 @@ public class MainActivity extends AppCompatActivity {
         buttonSearch.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-               /* getAnotherStuff();
-                myAdapter = new MyAdapter(getApplicationContext(), getAnotherStuff());
-                recyclerView.setAdapter(myAdapter);*/
 
-
-            }
-        });
-
-
+            }});
 
 
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
@@ -99,5 +89,4 @@ public class MainActivity extends AppCompatActivity {
         Model p = new Model();
         return models;
     }
-
 }
